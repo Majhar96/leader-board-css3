@@ -132,12 +132,25 @@ hr{
     }
      .players, .blogs, .courses {
          grid-template-columns: repeat(1, 1fr);
-         background-color: #A2A2A2;
+         align-items: center;
+         
          
      }
      .player, .blog, .course{
          flex-direction: column;
      }
      
-
+ }
+ @media only screen and (min-width:688px) and (max-width:992px) {
+    .containers{ 
+        width:100%;
+    }
+     .players, .blogs, .courses {
+         grid-template-columns: repeat(2, 1fr);
+         
+         
+     }
+     .player, .blog, .course{
+         flex-direction: column;
+     }
  }
